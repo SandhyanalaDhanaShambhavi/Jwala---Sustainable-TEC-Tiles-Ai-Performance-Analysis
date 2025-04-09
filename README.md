@@ -23,7 +23,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/jwala-sustainable-tec-tiles.git
+git clone https://github.com/SandhyanalaDhanaShambhavi/jwala-sustainable-tec-tiles.git
 cd jwala-sustainable-tec-tiles
 Install dependencies:
 
