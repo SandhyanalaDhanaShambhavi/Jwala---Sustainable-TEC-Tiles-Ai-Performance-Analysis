@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jwala TEC Tiles Predictor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>TEC Output Power Predictor</h1>
+  <form method="POST">
+    <input type="number" name="doping" placeholder="Doping Level" step="0.01" required>
+    <input type="number" name="temp_gradient" placeholder="Temperature Gradient" required>
+    <input type="number" name="seebeck" placeholder="Seebeck Coefficient" required>
+    <input type="number" name="thermal" placeholder="Thermal Conductivity" required>
+    <input type="number" name="electrical" placeholder="Electrical Conductivity" required>
+    <button type="submit">Predict</button>
+  </form>
+
+  {% if result %}
+    <h3>Predicted Output Power: {{ result }} W</h3>
+    <a href="/download">Download PDF Report</a>
+    <h3>Model Performance:</h3>
+    <img src="/static/performance.png" width="500">
+  {% endif %}
+</body>
+</html>
